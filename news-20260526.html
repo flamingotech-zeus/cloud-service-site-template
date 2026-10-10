@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>瞬间传送 Instant Cloud | 绿色低碳运维：我们怎么把机房 PUE 压下来</title>
+<meta name="description" content="结合碳达峰碳中和目标与《数据中心绿色低碳发展专项行动计划》，Instant Cloud 分享机房 PUE 优化措施、能耗数据与绿色电力采购实践。">
+<link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%3Cstop%20offset%3D%270%27%20stop-color%3D%27%231652f0%27%2F%3E%3Cstop%20offset%3D%271%27%20stop-color%3D%27%2300bcd4%27%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2714%27%20fill%3D%27url%28%23g%29%27%2F%3E%3Ctext%20x%3D%2732%27%20y%3D%2744%27%20font-family%3D%27Arial%2CHelvetica%2Csans-serif%27%20font-size%3D%2730%27%20font-weight%3D%27bold%27%20fill%3D%27%23ffffff%27%20text-anchor%3D%27middle%27%3EIC%3C%2Ftext%3E%3C%2Fsvg%3E">
+</head>
+<body>
+<header class="nav"><div class="wrap nv">
+  <a class="logo" href="index.html"><span class="lg">IC</span><span><b class="bcn">瞬间传送</b><i class="ben">INSTANT CLOUD</i></span></a>
+  <button class="burger" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+  <nav class="menu" id="menu">
+    <a href="index.html">首页</a><a href="products.html">产品介绍</a><a href="company.html">公司介绍</a>
+    <a class="on" href="news.html">新闻</a><a href="about.html">关于我们</a><a href="contact.html">联系我们</a>
+  </nav>
+  <a class="btn pri sm" href="contact.html">申请试用</a>
+</div></header>
+
+<section><div class="wrap">
+  <div class="art">
+    <div class="crumb" style="padding-top:34px"><a href="index.html">首页</a> / <a href="news.html">新闻</a> / 详情</div>
+    <div class="brandline">瞬间传送<span>INSTANT CLOUD</span></div>
+    <h1>绿色低碳运维：我们怎么把机房 PUE 压下来</h1>
+    <div class="meta">2026-05-26 · 技术分享 · 瞬间传送 Instant Cloud 云服务事业部</div>
+
+    <p>在碳达峰碳中和目标下，数据中心的能效已经成为绕不开的指标。国家发展改革委等部门印发的《数据中心绿色低碳发展专项行动计划》，对数据中心的电能利用效率等指标提出了明确要求；围绕算力基础设施高质量发展的部署，也反复强调绿色算力与算效提升。这些要求落到温州火烈鸟网络科技有限公司云服务事业部的日常运维上，就是一个每天都要看的数字：PUE。</p>
+
+    <p>PUE 是数据中心总能耗与 IT 设备能耗的比值。它越接近 1，说明用在外围（制冷、供电损耗等）上的电越少。我们过去一年的目标，就是把这个数字稳稳地压下来。</p>
+
+    <h3>先看清电都花在哪</h3>
+    <p>优化之前，我们先做了一轮完整的能耗盘点。结论是制冷系统占了大头，其次是供配电损耗，照明与辅助设备占比很小。也就是说，想降 PUE，主战场在制冷，而不是去抠照明那点电。</p>
+
+    <p>盘点还发现一个常见问题：机房长期按"最热那天"的标准运行。也就是说，为应对极端高温，制冷量长期开在一个偏保守的水平，绝大多数时段其实用不上，白白浪费。</p>
+
+    <h3>四项优化措施</h3>
+    <p>第一，提高送风温度。在满足设备进风要求的前提下，把冷通道送风温度适度上调，让制冷机组在更高效的区间工作。仅这一项，就带来了可观的收益。</p>
+
+    <p>第二，引入自然冷却。温州冬季和过渡季节的气温条件不错，具备一定时长的自然冷却窗口。我们在这些时段减少压缩机运行，改用自然冷源，降低制冷能耗。夏季高温期则回到机械制冷，保证安全。</p>
+
+    <p>第三，优化气流组织。封闭冷通道、封堵地板缝隙、整理线缆，减少冷热气流混合。这一项几乎不花钱，但效果直接。</p>
+
+    <p>第四，动态调节。根据实时负载调整制冷量，避免"低负载高制冷"。夜间和淡季业务量下降时，制冷同步降下来。</p>
+
+    <blockquote>降 PUE 不是比谁的数字更漂亮，而是在任何负载下都不浪费电，同时保证设备不出事。</blockquote>
+
+    <h3>能耗数据</h3>
+    <p>经过上述调整，在测试与试运行阶段，我们采集到的年度平均 PUE 由优化前约 1.6 降至约 1.35（实际数值随季节、负载率与设备状态变化）。过渡季节的部分时段可以更低，夏季高温期则回到较高水平。</p>
+
+    <h3>液冷还是自然冷却：我们怎么取舍</h3>
+    <p>液冷是近年的热门方向，散热效率高，但对改造中的机房而言，涉及管路、接口与运维方式的变化，投入较大，且更适合高功率密度场景。我们的判断是：当前以通用计算和存储为主的业务，功率密度尚未高到必须上液冷，优先做自然冷却与气流组织优化，性价比更高。未来若高密度算力业务的占比上升，我们会按场景逐步引入液冷，而不是为了"先进"而先进。</p>
+
+    <h3>绿色电力采购</h3>
+    <p>除了减少用电，用电来源同样重要。我们正在推进绿色电力采购，逐步提高可再生能源电量占比，并完善用电与能耗的可视化统计，让"用多少电、绿的占多少"有据可查。</p>
+
+    <h3>下一步</h3>
+    <p>年内计划在既有节点继续做精细化的能耗管理，把优化经验固化成标准流程，并逐步向新部署的节点推广。绿色低碳不是一次性的项目，而是一套需要长期执行和持续校准的运维习惯。</p>
+
+    <p style="margin-top:26px"><a class="link" href="news.html">← 返回新闻列表</a></p>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="fbot" style="margin-top:0;border-top:1px solid var(--line);padding-top:22px">
+    <span>瞬间传送 INSTANT CLOUD · © 2026 温州火烈鸟网络科技有限公司</span>
+    <span><a href="products.html">产品介绍</a> · <a href="news.html">新闻</a> · <a href="contact.html">联系我们</a> · office@flamingotech.cc</span>
+  </div>
+  <div class="fbot" style="border:0;margin-top:8px;padding-top:0">
+    <span><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener nofollow" style="color:inherit">浙ICP备2022033904号</a></span>
+    <span>浙江省温州市鹿城区七都街道山水智创大楼5号楼8层</span>
+  </div>
+</div></footer>
+</body>
+</html>

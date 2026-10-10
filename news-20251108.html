@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>瞬间传送 Instant Cloud | 瞬边 IEN 首个制造业组网试点落地：总部—工厂—海外仓连成一张网</title>
+<meta name="description" content="瞬边 IEN 在温州瑞安汽摩配企业完成首个制造业组网试点，总部、两处工厂与越南海外仓连成一张逻辑专网，时延与故障切换数据同步公开。">
+<link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%3Cstop%20offset%3D%270%27%20stop-color%3D%27%231652f0%27%2F%3E%3Cstop%20offset%3D%271%27%20stop-color%3D%27%2300bcd4%27%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2714%27%20fill%3D%27url%28%23g%29%27%2F%3E%3Ctext%20x%3D%2732%27%20y%3D%2744%27%20font-family%3D%27Arial%2CHelvetica%2Csans-serif%27%20font-size%3D%2730%27%20font-weight%3D%27bold%27%20fill%3D%27%23ffffff%27%20text-anchor%3D%27middle%27%3EIC%3C%2Ftext%3E%3C%2Fsvg%3E">
+</head>
+<body>
+<header class="nav"><div class="wrap nv">
+  <a class="logo" href="index.html"><span class="lg">IC</span><span><b class="bcn">瞬间传送</b><i class="ben">INSTANT CLOUD</i></span></a>
+  <button class="burger" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+  <nav class="menu" id="menu">
+    <a href="index.html">首页</a><a href="products.html">产品介绍</a><a href="company.html">公司介绍</a>
+    <a class="on" href="news.html">新闻</a><a href="about.html">关于我们</a><a href="contact.html">联系我们</a>
+  </nav>
+  <a class="btn pri sm" href="contact.html">申请试用</a>
+</div></header>
+
+<section><div class="wrap">
+  <div class="art">
+    <div class="crumb" style="padding-top:34px"><a href="index.html">首页</a> / <a href="news.html">新闻</a> / 详情</div>
+    <div class="brandline">瞬间传送<span>INSTANT CLOUD</span></div>
+    <h1>瞬边 IEN 首个制造业组网试点落地：总部—工厂—海外仓连成一张网</h1>
+    <div class="meta">2025-11-08 · 产品动态 · 瞬间传送 Instant Cloud 云服务事业部</div>
+
+    <p>经过近五个月的方案沟通、内网勘测与三轮灰度验证，Instant Cloud 瞬边 IEN（Instant Edge Network）在温州瑞安一家汽摩配企业的首个制造业组网试点，正式转入稳定运行阶段。该企业主营制动系统精密件，在瑞安设有两处生产基地，在越南平阳省设有海外仓与合作组装线。此前总部与工厂、海外仓之间的数据交换依赖公网加第三方网盘，图纸版本混乱、跨境大文件传输慢，是困扰了两年多的老问题。</p>
+
+    <p>这个试点能够推进，与政策方向的指引分不开。工业和信息化部持续推进信息化和工业化深度融合，把智能制造与工业互联网作为制造业转型升级的重要抓手，此前印发的信息化和工业化深度融合发展规划，明确提出推动企业网络化协同与数据贯通。温州作为国家级中小企业数字化转型城市试点城市，也在本地推动中小企业上云用平台。叠加浙江省"数字经济创新提质一号发展工程"的部署，制造业企业改造内网、打通数据链路的意愿明显增强。需求在，政策在，缺的往往就是一套能落地的方案。</p>
+
+    <h3>一条链路解决三个场景</h3>
+    <p>试点方案的核心，是把企业原本互相隔离的三张网络，用瞬边 IEN 连成一张逻辑专网。拓扑上分为三层：总部的核心接入节点部署在瑞安主厂区机房，负责汇聚 ERP、PDM 与图纸服务器；工厂侧在两条产线各部署一台轻量接入设备，通过企业既有专线回连核心节点；海外仓侧则在越南使用当地边缘节点作为落地出口。三层之间通过 IEN 的加密隧道组网，路由策略由控制台统一下发，企业不需要自建 VPN 网关，也不需要改动现有内网地址规划。</p>
+
+    <p>具体到业务，这套网络主要跑三类流量。第一类是图纸与工艺文件的分发，单个零部件三维模型压缩后多在 300 MB 至 2 GB 之间，此前跨境分发一份完整图包常常要一两个小时。第二类是 MES 与 ERP 之间的单据同步，单条记录很小但要求稳定低时延。第三类是海外仓的库存快照回传，每天定时批量执行。三类流量的特征完全不同，这也决定了组网不能只追求"带宽大"，而要做调度分层。</p>
+
+    <h3>时延与故障切换实测</h3>
+    <p>下面是试点期间采集的数据，实际表现会受企业带宽、运营商线路质量与任务特征影响。总部到瑞安两处工厂的内网往返时延，试点前走公网平均约 18 毫秒，试点后走 IEN 隧道平均约 6 毫秒；总部到越南海外仓的跨境往返时延，试点前平均约 120 毫秒且抖动较大，试点后平均约 74 毫秒，95 分位抖动收敛到 30 毫秒以内。图纸图包分发方面，一份 1.2 GB 的工艺包从总部发往海外仓，试点前平均耗时约 26 分钟，试点后约 7 分钟。</p>
+
+    <blockquote>制造业客户要的其实不是"最快"，而是"每天都能一样快"。产线不会为了一条今天快、明天慢的链路去调整节拍。</blockquote>
+
+    <h3>故障切换做了两次真实演练</h3>
+    <p>试点期间，我们配合企业 IT 部门做了两次链路故障切换演练。第一次是主动断开工厂一号专线，IEN 在检测到链路异常后自动把流量切到备份路径，业务侧反馈是 MES 单据同步出现短暂停顿，未产生数据丢失，切换过程在数十秒级别完成。第二次是海外仓当地出口线路抖动，控制台按预设策略将大文件任务降并发、优先保障单据同步，等出口恢复后自动恢复图包分发队列。</p>
+
+    <p>两次演练暴露的问题同样有价值。第一次演练中，值班同事是靠人工电话确认切换成功，而不是依赖告警推送，这说明监控与告警的联动还不够快；第二次演练后，我们把跨境任务的降级策略从"统一降并发"改为按客户配置的策略模板执行，避免一刀切影响不涉及跨境链路的任务。这些调整都已经在正式环境中生效。</p>
+
+    <h3>试点跑通之后</h3>
+    <p>企业信息部门负责人的评价很朴素："终于不用在群里喊谁把图纸发出去了。"这个反馈比任何指标都更让我们确信方向是对的。接下来，瞬边 IEN 会把制造业组网做成标准方案包，包含内网勘测清单、常见拓扑模板与切换演练流程，同时针对温州本地的鞋服、电气、汽摩配等行业补充行业模板，降低中小企业第一次组网的门槛。我们也欢迎更多正在推进数字化转型的中小制造企业联系温州火烈鸟网络科技有限公司，用一个小场景先跑起来，再逐步扩展。</p>
+
+    <p style="margin-top:26px"><a class="link" href="news.html">← 返回新闻列表</a></p>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="fbot" style="margin-top:0;border-top:1px solid var(--line);padding-top:22px">
+    <span>瞬间传送 INSTANT CLOUD · © 2026 温州火烈鸟网络科技有限公司</span>
+    <span><a href="products.html">产品介绍</a> · <a href="news.html">新闻</a> · <a href="contact.html">联系我们</a> · office@flamingotech.cc</span>
+  </div>
+  <div class="fbot" style="border:0;margin-top:8px;padding-top:0">
+    <span><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener nofollow" style="color:inherit">浙ICP备2022033904号</a></span>
+    <span>浙江省温州市鹿城区七都街道山水智创大楼5号楼8层</span>
+  </div>
+</div></footer>
+</body>
+</html>

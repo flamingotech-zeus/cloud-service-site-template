@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://instant.flamingotech.cc/sitemap.xml
